@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_utils/get_utils.dart';
+import 'package:get/get.dart';
 import 'package:vakinha_burger_mobile/app/core/ui/widgets/vakinha_appbar.dart';
 import 'package:vakinha_burger_mobile/app/core/ui/widgets/vakinha_button.dart';
 import 'package:vakinha_burger_mobile/app/core/ui/widgets/vakinha_textformfield.dart';
@@ -39,7 +39,9 @@ class SplashPage extends StatelessWidget {
                       label: 'ACESSAR',
                       width: context.widthTransformer(reducedBy: 40),
                       height: 35,
-                      onPressed: () {})
+                      onPressed: () {
+                        Get.toNamed('/auth/login');
+                      })
                 ],
               ),
             )

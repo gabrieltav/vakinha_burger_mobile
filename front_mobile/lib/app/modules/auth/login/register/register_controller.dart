@@ -34,6 +34,7 @@ class RegisterController extends GetxController
       await _authRepository.register(name, email, password);
       _loading.toggle();
       Get.back();
+      // ignore: todo
       // TODO: Voltar quando fizer o login
       _message(MessageModel(
         title: 'Sucesso',

@@ -30,6 +30,7 @@ class VakinhaButton extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
+        // ignore: prefer_const_constructors
         style: ElevatedButton.styleFrom(shape: StadiumBorder(), primary: color),
       ),
     );

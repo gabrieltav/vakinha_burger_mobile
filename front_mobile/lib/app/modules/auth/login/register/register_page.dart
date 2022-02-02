@@ -4,6 +4,7 @@ import 'package:vakinha_burger_mobile/app/core/ui/vakinha_ui.dart';
 import 'package:vakinha_burger_mobile/app/core/ui/widgets/vakinha_appbar.dart';
 import 'package:vakinha_burger_mobile/app/core/ui/widgets/vakinha_button.dart';
 import 'package:vakinha_burger_mobile/app/core/ui/widgets/vakinha_textformfield.dart';
+import 'package:vakinha_burger_mobile/app/modules/auth/login/register/register_controller.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -57,7 +58,9 @@ class RegisterPage extends StatelessWidget {
                     child: VakinhaButton(
                       width: context.width,
                       label: 'CADASTRAR',
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.find<RegisterController>().qualquer();
+                      },
                     ),
                   ),
                 ],

@@ -102,7 +102,12 @@ class _RegisterPageState
                       onPressed: () {
                         final formValid =
                             _formKey.currentState?.validate() ?? false;
-                        if (formValid) {}
+                        if (formValid) {
+                          controller.register(
+                              name: _nameEC.text,
+                              email: _emailEC.text,
+                              password: _passwordEC.text);
+                        }
                       },
                     ),
                   ),
